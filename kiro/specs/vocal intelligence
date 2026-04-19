@@ -11,3 +11,13 @@
 
 ## 3. Security & Trust
 - **Attestation:** Every intent detection event must be signed via local NIST P-256 hardware signatures (AetherBridge protocol).
+# Design: TruthLayer Architecture
+
+## System Components
+1. **Audio Pipeline:** ElevenLabs WebSocket stream -> Prosody Parser.
+2. **Logic Engine (Kiro):** Evaluates incoming metadata against the Hesitation Trap rules defined in `requirements.md`.
+3. **Identity Rail:** Interacts with the local Secure Enclave to sign the diagnostic payload.
+4. **Briefing Layer:** Maps the Severity Score to a dynamic script for ElevenLabs "The Strategist" voice model.
+
+## Data Flow
+[User Audio] -> [ElevenLabs Metadata] -> [Kiro Analysis] -> [Local Signer] -> [ElevenLabs Voice Output]
