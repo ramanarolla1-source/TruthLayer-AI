@@ -1,0 +1,5 @@
+Title: Security & Spec Audit
+Event: File Save
+File pattern: scripts/*.py
+Action: Ask Kiro
+Instructions: "Verify that this script adheres to the Vocal Intelligence requirements.md and ensures NIST P-256 signatures are being generated for every intent event."
