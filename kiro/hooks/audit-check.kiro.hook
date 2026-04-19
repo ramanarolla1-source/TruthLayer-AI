@@ -1,1 +1,24 @@
+# Kiro Hook: TruthLayer Security & Spec Alignment
 
+# 1. Trigger Configuration
+On: File Save
+Pattern: scripts/*.py, src/**/*.rs
+Context: Read .kiro/specs/vocal-intelligence/requirements.md
+
+# 2. Agent Instructions
+Instructions: >
+  Act as a Senior Security Auditor. Every time I save a script in this repository, 
+  perform the following checks:
+  
+  1. **NIST P-256 Check:** Verify the code includes a call to the local hardware 
+     signer or the `ecdsa` library for NIST P-256 signatures. If missing, 
+     flag it as a "Trust Gap."
+     
+  2. **Prosody Alignment:** Check that the logic for 'High Hesitation' (2.5s delay) 
+     matches the requirements.md exactly.
+     
+  3. **Gas Optimization:** If targeting Stylus/WASM, suggest any Rust-level 
+     optimizations to keep the gas reduction at our 90% target.
+
+# 3. Output Format
+Format: "Kiro Audit: [Pass/Fail] - [List of specific issues or optimization tips]"
