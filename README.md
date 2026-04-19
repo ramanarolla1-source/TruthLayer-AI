@@ -1,8 +1,13 @@
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/65e9cad5-ba41-43b2-af5e-e2b626ec92ea" />
+
+
+# TruthLayer AI: The Intelligence Layer for Business
+
 TruthLayer AI: The Intelligence Layer for Business
 Built on Kiro. Powered by ElevenLabs.
 1. THE "FALSE YES" AUDIT
 TruthLayer AI is a diagnostic tool designed to uncover the hidden trust gap in business meetings. While traditional transcripts capture words, TruthLayer captures intent. By analyzing vocal prosody and the "Sound of Silence," we detect the "False Yes" that leads to project failure and client ghosting.
-# TruthLayer AI: The Intelligence Layer for Business
+
 
 ## 1. THE PROBLEM: THE HIDDEN TRUST GAP
 - **Transcripts Only Capture Words:** They fail to detect the intent behind speech.
