@@ -1,1 +1,13 @@
+# Requirements: TruthLayer Vocal Intelligence
 
+## 1. The "False Yes" Paradox
+- **Requirement:** The system must distinguish between a transcript-level "Yes" and a behavioral "Yes."
+- **Marker 1 (Hesitation):** If a response to a critical question (e.g., budget, timeline) has a silence gap > 2.5 seconds, flag as "High Hesitation."
+- **Marker 2 (Prosody):** Detect pitch variance. A rising "upspeak" on a commitment token must be flagged as "Low Confidence."
+
+## 2. Severity Engine
+- **Logic:** Calculate a 1-100 risk score based on cumulative markers.
+- **Threshold:** Any score > 75 must trigger a "High Risk" briefing via ElevenLabs.
+
+## 3. Security & Trust
+- **Attestation:** Every intent detection event must be signed via local NIST P-256 hardware signatures (AetherBridge protocol).
