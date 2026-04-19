@@ -1,1 +1,6 @@
-
+mkdir -p .kiro/specs/vocal-intelligence  # SDD artifacts
+mkdir -p .kiro/hooks                    # Automation scripts
+mkdir -p .kiro/steering                 # Rules for the AI agent
+mkdir scripts                           # Core logic (e.g., blackout_sim.py)
+mkdir assets                            # Images/Videos for the demo
+touch README.md                         # Your Project One-Pager
