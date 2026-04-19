@@ -1,1 +1,11 @@
-
+truthlayer-ai/
+├── .kiro/                       # The "Source of Truth"
+│   ├── hooks/
+│   │   └── audit-check.kiro.hook
+│   └── specs/
+│       └── vocal-intelligence/
+│           ├── requirements.md  # Your "False Yes" problem statements
+│           └── design.md        # Technical architecture
+├── scripts/                     # The engine
+│   └── blackout_sim.py          # The reproducible stress test
+└── README.md                    # The One-Pager/Pitch
